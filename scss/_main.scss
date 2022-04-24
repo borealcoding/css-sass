@@ -1,0 +1,84 @@
+@use 'variables';
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  column-gap: 15px;
+  margin: 20px;
+  section.kanban-column {
+    background: variables.$kanban-color;
+    border-radius: 2%;
+    padding: 10px;
+    height: auto;
+    width: 300px;
+    color: black;
+    h1 {
+      margin: 10px;
+      font-size: 13px;
+      text-align: left;
+    }
+    div.task-card {
+      background: white;
+      border-color: variables.$card-color;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 5%;
+      padding: 1em;
+      margin-bottom: 0.5em;
+      height: 8em;
+      overflow: hidden;
+      p.task-title {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      p.task-description {
+        font-weight: 500;
+        font-size: 13px;
+      }
+      span.delete-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        img {
+          margin: 0px;
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+        }
+        img.delete-item {
+          background-image: url(http://assets.stickpng.com/images/5a5798809538462e5a82d431.png);
+          background-size: cover;
+        }
+      }
+      span.task-category {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        img {
+          margin: 2px;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+        }
+        img#pc-item {
+          background-image: url(https://www.icons101.com/icon_ico/id_78899/pc.ico);
+          background-size: cover;
+        }
+        img#cube-item {
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemgL0a_iO8vC-hbX3LPjbjv6UPrjLWh1xBA&usqp=CAU);
+          background-size: cover;
+        }
+        img#smartphone-item {
+          background-image: url(https://previews.123rf.com/images/alexwhite/alexwhite1609/alexwhite160904338/62627204-dise%C3%B1o-plano-de-tel%C3%A9fono-inteligente-icono-de-web-redondo-amarillo.jpg);
+          background-size: cover;
+        }
+      }
+    }
+    div.task-card:hover {
+      background: variables.$primary-color;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import 'header';
+@import 'main';
+
+body {
+    background: url(https://img.archiexpo.es/images_ae/photo-g/67453-3693041.jpg) no-repeat center center fixed;
+    font-family: variables.$montserrat-font;
+}
+
+
+
